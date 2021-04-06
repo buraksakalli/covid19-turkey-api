@@ -1,8 +1,12 @@
-# Covid19 Haftalık Vaka
+# Covid19 Haftalık Vaka API
 
 ## Ne İşe Yarıyor?
 
 Sağlık Bakanlığı'nın haftalık olarak yayınladığı verileri projelerinizde kullanmak istediğinizde, liste olarak _JSON_ çıktı üreterek düzgün bir veri elde etmiş oluyorsunuz.
+
+## Rotalar
+
+- `/weekly` --> Haftalık olarak il bazında yayınlanan verilere erişebilirsiniz.
 
 ### Örnek Çıktı
 
