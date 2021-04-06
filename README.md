@@ -18,6 +18,10 @@ yarn install
 node index.js
 ```
 
+## Demo
+
+<a href="https://vakalar.herokuapp.com/weekly">Demo</a>
+
 ## API
 
 ### GET
