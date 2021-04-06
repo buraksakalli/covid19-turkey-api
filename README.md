@@ -4,14 +4,6 @@
 
 Sağlık Bakanlığı'nın haftalık olarak yayınladığı verileri projelerinizde kullanmak istediğinizde, liste olarak _JSON_ çıktı üreterek düzgün bir veri elde etmiş oluyorsunuz.
 
-## Rotalar
-
-- `/weekly` --> Haftalık olarak il bazında yayınlanan verilere erişebilirsiniz.
-
-### Örnek Çıktı
-
-![covid19-haftalik-vaka](https://user-images.githubusercontent.com/10114716/109715295-8889e400-7bb4-11eb-9af2-dc06d9f31756.png)
-
 ## Kurulum
 
 ```bash
@@ -26,23 +18,27 @@ yarn install
 node index.js
 ```
 
-## Sonuç
+## API
 
-- Şehir
-- Yüzbindeki vaka sayısı
-- Nüfus
-- Vaka
-  - `population * covid_cases_by_one_hundred_k / 100000`
+### GET
 
-bilgilerini içeren bir obje dizisi elde ediyorsunuz.
+- `/weekly`
 
-### Örnek
+  - #### Yanıt
 
-```json
-{
-  "city": "Ankara",
-  "covid_cases_by_one_hundred_k": 39.84,
-  "population": 5663322,
-  "cases": 2256
-}
-```
+  - ```json
+    {
+      "message": "ok",
+      "status": 200,
+      "type": "weekly",
+      "list": [
+        {
+          "city": "Adana",
+          "covid_cases_by_one_hundred_k": 111.26,
+          "population": 2258718,
+          "cases": "2513"
+        }
+        ...
+      ]
+    }
+    ```

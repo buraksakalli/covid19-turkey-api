@@ -2,5 +2,5 @@
 const controller = require("../controller");
 
 module.exports = (app) => {
-  app.route("/").get(controller.weekly);
+  app.route("/weekly").get(controller.weekly);
 };

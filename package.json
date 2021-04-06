@@ -1,5 +1,5 @@
 {
-  "name": "covid-tracker",
+  "name": "covid19-turkey-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,8 +7,8 @@
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Burak Sakalli",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
     "node-fetch": "^2.6.1",
