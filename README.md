@@ -2,7 +2,7 @@
 
 ## Ne İşe Yarıyor?
 
-Sağlık Bakanlığı'nın günlük olarak yayınladığı verileri projelerinizde kullanmak istediğinizde, liste olarak _JSON_ çıktı üreterek düzgün bir veri elde etmiş oluyorsunuz.
+Sağlık Bakanlığı'nın günlük ve haftalık olarak yayınladığı verileri projelerinizde kullanmak istediğinizde, liste olarak _JSON_ çıktı üreterek düzgün bir veri elde etmiş oluyorsunuz.
 
 ## Kurulum
 
@@ -17,10 +17,6 @@ yarn install
 ```bash
 node index.js
 ```
-
-## Demo
-
-<a href="https://vakalar.herokuapp.com/weekly">Demo</a>
 
 ## API
 
@@ -83,3 +79,9 @@ node index.js
       }
     }
     ```
+
+## Demo
+
+- <a href="https://vakalar.herokuapp.com/daily">Günlük</a>
+
+- <a href="https://vakalar.herokuapp.com/weekly">Haftalık</a>

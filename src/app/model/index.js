@@ -83,9 +83,9 @@ Cases.weekly = (result) => {
           e.childNodes[3].text.replace(/\s/g, "").replace(",", ".")
         );
         const population = JSON.parse(JSON.stringify(matching)).population;
-        const cases = parseFloat(
+        const cases = parseInt(
           (population * covid_cases_by_one_hundred_k) / 100000
-        ).toFixed(0);
+        );
 
         list = list.concat({
           city,
