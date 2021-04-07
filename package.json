@@ -10,8 +10,10 @@
   "author": "Burak Sakalli",
   "license": "MIT",
   "dependencies": {
+    "after-load": "^1.0.4",
     "express": "^4.17.1",
     "node-fetch": "^2.6.1",
-    "node-html-parser": "^3.0.3"
+    "node-html-parser": "^3.0.3",
+    "xpath-html": "^1.0.2"
   }
 }
