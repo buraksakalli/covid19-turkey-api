@@ -73,7 +73,7 @@ Cases.weekly = (result) => {
     parseTable(table, res);
   }
 
-  function parseTable(table, res) {
+  function parseTable(table) {
     let list = [];
     table.childNodes.map((e) => {
       if (e.childNodes[3] !== undefined) {

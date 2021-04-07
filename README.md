@@ -1,5 +1,7 @@
 # Covid19 Haftalık Vaka API
 
+[![Build Status](https://api.travis-ci.org/buraksakalli/covid19-turkey-api.svg?branch=master&status=started)](https://travis-ci.org/buraksakalli/covid19-turkey-api) [![DeepScan grade](https://deepscan.io/api/teams/7308/projects/16604/branches/359514/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=7308&pid=16604&bid=359514)
+
 ## Ne İşe Yarıyor?
 
 Sağlık Bakanlığı'nın günlük ve haftalık olarak yayınladığı verileri projelerinizde kullanmak istediğinizde, liste olarak _JSON_ çıktı üreterek düzgün bir veri elde etmiş oluyorsunuz.
