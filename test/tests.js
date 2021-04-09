@@ -6,6 +6,15 @@ const url = {
   daily: "https://vakalar.herokuapp.com/daily",
 };
 
+describe("Daily Data", () => {
+  it("returns status 200", (done) => {
+    request(url.daily, (err, res, body) => {
+      expect(res.statusCode).to.equal(200);
+      done();
+    });
+  });
+});
+
 describe("Weekly Data", () => {
   it("returns status 200", (done) => {
     request(url.weekly, (err, res, body) => {
@@ -13,12 +22,9 @@ describe("Weekly Data", () => {
       done();
     });
   });
-});
-
-describe("Daily Data", () => {
-  it("returns status 200", (done) => {
-    request(url.daily, (err, res, body) => {
-      expect(res.statusCode).to.equal(200);
+  it("returns a list contains 81 cities.", (done) => {
+    request(url.weekly, (err, res, body) => {
+      expect(JSON.parse(res.body).list.length).to.equal(81);
       done();
     });
   });

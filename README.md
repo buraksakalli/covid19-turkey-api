@@ -22,9 +22,7 @@ node index.js
 
 ## API
 
-### GET
-
-- `/weekly`
+- **GET** `/weekly`
 
   - #### Yanıt
 
@@ -45,7 +43,7 @@ node index.js
     }
     ```
 
-- `/daily`
+- **GET** `/daily`
 
   - #### Yanıt
 
