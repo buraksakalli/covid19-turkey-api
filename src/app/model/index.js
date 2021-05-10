@@ -102,4 +102,16 @@ Cases.weekly = (result) => {
   getData();
 };
 
+Cases.vaccine = (result) => {
+  afterLoad("https://covid19asi.saglik.gov.tr", (html, $) => {
+    const data = {
+      total: clear($(".toplam_yapilan_asi_sayisi").eq(0).text()),
+      firstDose: clear($(".birinci_doz").eq(0).text()),
+      secondDose: clear($(".ikinci_doz").eq(0).text()),
+      date: $(".asisayisiguncellemesaati").eq(0).text(),
+    };
+    result({ message: "ok", status: 200, type: "vaccine", data });
+  });
+};
+
 module.exports = Cases;
