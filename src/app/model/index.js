@@ -96,7 +96,14 @@ Cases.weekly = (result) => {
       }
     });
 
-    result({ message: "ok", status: 200, type: "weekly", list });
+    result({
+      message: "ok",
+      status: 200,
+      type: "weekly",
+      week: 1,
+      date: "",
+      data: list,
+    });
   }
 
   getData();
